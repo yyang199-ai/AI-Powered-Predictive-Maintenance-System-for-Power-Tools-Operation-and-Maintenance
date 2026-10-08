@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/
+artifacts/*
+!artifacts/model/
+!artifacts/experiment_results.json
+!artifacts/simulated_fleet.csv
+!artifacts/test_predictions.csv
+artifacts/model/*
+!artifacts/model/manifest.json
+!artifacts/model/weights.pt

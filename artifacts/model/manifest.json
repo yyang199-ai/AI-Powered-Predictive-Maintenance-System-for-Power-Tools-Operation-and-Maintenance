@@ -1,0 +1,89 @@
+{
+  "version": "synthetic-hybrid-seed42-v1",
+  "kind": "hybrid",
+  "corrected": true,
+  "quality_gate": true,
+  "sequence_length": 16,
+  "window_aggregation_minutes": 1,
+  "input_dimension": 32,
+  "baseline": {
+    "version": "healthy-linear-v1",
+    "features": [
+      "vibration_rms",
+      "vibration_kurtosis",
+      "current_rms",
+      "current_ripple",
+      "temperature_rise",
+      "temperature_slope"
+    ],
+    "coefficients": [
+      [
+        1.5566618196068012,
+        3.713601937875563,
+        0.1390058560333877,
+        0.2750386927873172,
+        8.517753881539033,
+        -0.006988539305225348
+      ],
+      [
+        1.8485764966668836,
+        -0.1855573079619004,
+        7.144991774146579,
+        0.46414445128851495,
+        19.923133910325237,
+        0.0196970680999341
+      ],
+      [
+        -0.29175661898204674,
+        -0.795642862210499,
+        0.806482329128034,
+        -0.1169493940975146,
+        -0.7042585844095001,
+        0.0135015426452976
+      ],
+      [
+        -0.21441526117949553,
+        0.02288140863039786,
+        0.18701276071468098,
+        0.04452031297157405,
+        0.06912971970634937,
+        0.007832605788304059
+      ]
+    ],
+    "scale": [
+      0.12984838499793377,
+      0.18003876008409092,
+      0.1839431721467078,
+      0.05645367403432061,
+      0.6102865375265796,
+      0.008149161305913958
+    ],
+    "context_min": [
+      6892.504377147911,
+      0.15,
+      20.11580752436133
+    ],
+    "context_max": [
+      9100.12413970396,
+      0.85,
+      25.738835752182883
+    ]
+  },
+  "source": "synthetic",
+  "rul_unit": "effective_operating_hours",
+  "failure_definition": "simulated wear >= 1",
+  "supported_mode": "drilling",
+  "class_labels": [
+    "healthy",
+    "mild",
+    "moderate",
+    "severe"
+  ],
+  "runtime": "Python 3.12, PyTorch 2.6 CPU",
+  "limitations": [
+    "not validated on real tools",
+    "intervals not calibrated on real data",
+    "no RUL with missing critical sensors"
+  ],
+  "weights_sha256": "3a7f1ab02617f5f27da2ee64c644e9e20d1959694ca215bf54b5cb574b612305"
+}

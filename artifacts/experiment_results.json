@@ -1,0 +1,581 @@
+{
+  "seed": 42,
+  "epochs": 12,
+  "source": "synthetic feature trajectories",
+  "total_windows": 6000,
+  "split_devices": {
+    "train": [
+      "DRILL-001",
+      "DRILL-004",
+      "DRILL-006",
+      "DRILL-007",
+      "DRILL-008",
+      "DRILL-010",
+      "DRILL-011",
+      "DRILL-013",
+      "DRILL-016",
+      "DRILL-017",
+      "DRILL-018",
+      "DRILL-019",
+      "DRILL-020",
+      "DRILL-021",
+      "DRILL-022",
+      "DRILL-023",
+      "DRILL-024",
+      "DRILL-025",
+      "DRILL-026",
+      "DRILL-027",
+      "DRILL-030"
+    ],
+    "validation": [
+      "DRILL-003",
+      "DRILL-005",
+      "DRILL-012",
+      "DRILL-015",
+      "DRILL-028",
+      "DRILL-029"
+    ],
+    "test": [
+      "DRILL-002",
+      "DRILL-009",
+      "DRILL-014"
+    ]
+  },
+  "experiments": {
+    "hybrid": {
+      "samples": 459,
+      "accuracy": 0.9564270152505446,
+      "confusion_matrix": [
+        [
+          163,
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          84,
+          10,
+          0
+        ],
+        [
+          0,
+          3,
+          129,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9644970414201184,
+          "recall": 1.0,
+          "f1": 0.9819277108433735,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.9655172413793104,
+          "recall": 0.84,
+          "f1": 0.8983957219251337,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 0.9280575539568345,
+          "recall": 0.9699248120300752,
+          "f1": 0.9485294117647058,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.984375,
+          "recall": 1.0,
+          "f1": 0.9921259842519685,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.16327960789203644,
+      "rul_rmse_hours": 0.2199479341506958,
+      "rul_mape_excluding_under_15min": 0.10150765627622604,
+      "rul_interval_coverage": 0.8278867102396514,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 17789,
+      "inference_median_ms": 0.5898140000226704,
+      "inference_p95_ms": 0.6848235000347813,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.0,
+      "critical_fault_recall": 1.0,
+      "validation_loss_history": [
+        1.2797327041625977,
+        0.7399782538414001,
+        0.528536319732666,
+        0.35823625326156616,
+        0.3226086497306824,
+        0.33749061822891235,
+        0.23885539174079895,
+        0.21677012741565704,
+        0.22174064815044403,
+        0.315654993057251,
+        0.24033072590827942,
+        0.32567137479782104
+      ],
+      "training_seconds": 3.4375046060000614,
+      "serialized_weights_bytes": 81590
+    },
+    "lstm": {
+      "samples": 459,
+      "accuracy": 0.9564270152505446,
+      "confusion_matrix": [
+        [
+          161,
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          88,
+          7,
+          0
+        ],
+        [
+          0,
+          5,
+          127,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9698795180722891,
+          "recall": 0.9877300613496932,
+          "f1": 0.9787234042553191,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.9263157894736842,
+          "recall": 0.88,
+          "f1": 0.9025641025641026,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 0.9477611940298507,
+          "recall": 0.9548872180451128,
+          "f1": 0.951310861423221,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.984375,
+          "recall": 1.0,
+          "f1": 0.9921259842519685,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.15464390814304352,
+      "rul_rmse_hours": 0.20024564862251282,
+      "rul_mape_excluding_under_15min": 0.09574174135923386,
+      "rul_interval_coverage": 0.8191721132897604,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 9245,
+      "inference_median_ms": 0.3969394999785436,
+      "inference_p95_ms": 0.8186927499536957,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.012269938650306749,
+      "critical_fault_recall": 1.0,
+      "validation_loss_history": [
+        1.3808434009552002,
+        0.867321789264679,
+        0.5445162653923035,
+        0.41743719577789307,
+        0.35809147357940674,
+        0.3371204733848572,
+        0.2826070189476013,
+        0.26072442531585693,
+        0.2535330057144165,
+        0.23750834167003632,
+        0.20843416452407837,
+        0.2260645031929016
+      ],
+      "training_seconds": 1.761626342999989
+    },
+    "transformer": {
+      "samples": 459,
+      "accuracy": 0.9498910675381264,
+      "confusion_matrix": [
+        [
+          161,
+          2,
+          0,
+          0
+        ],
+        [
+          9,
+          91,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          121,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9470588235294117,
+          "recall": 0.9877300613496932,
+          "f1": 0.9669669669669669,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.8921568627450981,
+          "recall": 0.91,
+          "f1": 0.900990099009901,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 1.0,
+          "recall": 0.9097744360902256,
+          "f1": 0.952755905511811,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.9545454545454546,
+          "recall": 1.0,
+          "f1": 0.9767441860465116,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.17522390186786652,
+      "rul_rmse_hours": 0.24232855439186096,
+      "rul_mape_excluding_under_15min": 0.11176833510398865,
+      "rul_interval_coverage": 0.8736383442265795,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 9341,
+      "inference_median_ms": 0.4323120000435665,
+      "inference_p95_ms": 0.5089257000292946,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.012269938650306749,
+      "critical_fault_recall": 1.0,
+      "validation_loss_history": [
+        1.017167091369629,
+        0.6494269371032715,
+        0.4489479660987854,
+        0.3659455478191376,
+        0.3038799464702606,
+        0.28814372420310974,
+        0.24891287088394165,
+        0.23495247960090637,
+        0.32578060030937195,
+        0.20125636458396912,
+        0.20420628786087036,
+        0.19690446555614471
+      ],
+      "training_seconds": 2.0458254640000177
+    },
+    "no_condition_correction": {
+      "samples": 459,
+      "accuracy": 0.8235294117647058,
+      "confusion_matrix": [
+        [
+          163,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          83,
+          1,
+          0
+        ],
+        [
+          0,
+          38,
+          70,
+          25
+        ],
+        [
+          0,
+          0,
+          1,
+          62
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9106145251396648,
+          "recall": 1.0,
+          "f1": 0.9532163742690059,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.6859504132231405,
+          "recall": 0.83,
+          "f1": 0.751131221719457,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 0.9722222222222222,
+          "recall": 0.5263157894736842,
+          "f1": 0.6829268292682927,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.7126436781609196,
+          "recall": 0.9841269841269841,
+          "f1": 0.8266666666666667,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.22636465728282928,
+      "rul_rmse_hours": 0.27104395627975464,
+      "rul_mape_excluding_under_15min": 0.16082647442817688,
+      "rul_interval_coverage": 0.7995642701525054,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 17789,
+      "inference_median_ms": 0.5948619999571747,
+      "inference_p95_ms": 0.666670499987276,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.0,
+      "critical_fault_recall": 0.9841269841269841,
+      "validation_loss_history": [
+        1.5282822847366333,
+        1.0408134460449219,
+        0.7711939811706543,
+        0.7097052931785583,
+        0.6102384328842163,
+        0.5141963958740234,
+        0.6258029937744141,
+        0.47034332156181335,
+        0.5172750353813171,
+        0.6778634786605835,
+        0.512011706829071,
+        0.569836437702179
+      ],
+      "training_seconds": 2.9137133780000113
+    },
+    "fixed_fusion": {
+      "samples": 459,
+      "accuracy": 0.9455337690631809,
+      "confusion_matrix": [
+        [
+          155,
+          8,
+          0,
+          0
+        ],
+        [
+          4,
+          85,
+          11,
+          0
+        ],
+        [
+          0,
+          0,
+          131,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9748427672955975,
+          "recall": 0.950920245398773,
+          "f1": 0.9627329192546584,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.9139784946236559,
+          "recall": 0.85,
+          "f1": 0.8808290155440415,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 0.9225352112676056,
+          "recall": 0.9849624060150376,
+          "f1": 0.9527272727272728,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.9692307692307692,
+          "recall": 1.0,
+          "f1": 0.984375,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.17545215785503387,
+      "rul_rmse_hours": 0.22827035188674927,
+      "rul_mape_excluding_under_15min": 0.11787565797567368,
+      "rul_interval_coverage": 0.7625272331154684,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 17789,
+      "inference_median_ms": 0.5982624999205655,
+      "inference_p95_ms": 0.9147000999803367,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.049079754601226995,
+      "critical_fault_recall": 1.0,
+      "validation_loss_history": [
+        1.2865396738052368,
+        0.7517569661140442,
+        0.5489769577980042,
+        0.4792359471321106,
+        0.40769723057746887,
+        0.41196542978286743,
+        0.2847963273525238,
+        0.26439324021339417,
+        0.2211388647556305,
+        0.4112478792667389,
+        0.2397652268409729,
+        0.21790233254432678
+      ],
+      "training_seconds": 2.6505298609999954
+    },
+    "hybrid_lstm_int8": {
+      "samples": 459,
+      "accuracy": 0.954248366013072,
+      "confusion_matrix": [
+        [
+          163,
+          0,
+          0,
+          0
+        ],
+        [
+          7,
+          83,
+          10,
+          0
+        ],
+        [
+          0,
+          3,
+          129,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          63
+        ]
+      ],
+      "per_class": [
+        {
+          "stage": 0,
+          "precision": 0.9588235294117647,
+          "recall": 1.0,
+          "f1": 0.978978978978979,
+          "support": 163
+        },
+        {
+          "stage": 1,
+          "precision": 0.9651162790697675,
+          "recall": 0.83,
+          "f1": 0.8924731182795699,
+          "support": 100
+        },
+        {
+          "stage": 2,
+          "precision": 0.9280575539568345,
+          "recall": 0.9699248120300752,
+          "f1": 0.9485294117647058,
+          "support": 133
+        },
+        {
+          "stage": 3,
+          "precision": 0.984375,
+          "recall": 1.0,
+          "f1": 0.9921259842519685,
+          "support": 63
+        }
+      ],
+      "rul_mae_hours": 0.162517249584198,
+      "rul_rmse_hours": 0.21962979435920715,
+      "rul_mape_excluding_under_15min": 0.10049402713775635,
+      "rul_interval_coverage": 0.8278867102396514,
+      "nominal_interval_coverage": 0.8,
+      "parameter_count": 17789,
+      "inference_median_ms": 0.7399400000736023,
+      "inference_p95_ms": 1.4235489000043342,
+      "latency_scope": "CPU batch=1 model forward only; excludes feature extraction and IO",
+      "healthy_false_positive_rate": 0.0,
+      "critical_fault_recall": 1.0,
+      "serialized_weights_bytes": 57590,
+      "quantization_scope": "LSTM weights only; packed weights do not reduce architecture parameter count"
+    },
+    "vibration_threshold": {
+      "threshold": 2.3636363636363633,
+      "binary_accuracy": 0.7708333333333334,
+      "healthy_false_positive_rate": 0.395,
+      "fault_recall": 0.8590425531914894,
+      "task": "binary healthy vs any wear; not directly comparable to four-class accuracy"
+    }
+  },
+  "limitations": [
+    "one seed only",
+    "test set contains 3 independent devices",
+    "generated feature summaries, not real acquired waveforms",
+    "CPU forward latency is not hardware end-to-end latency",
+    "no measured power or peak RAM"
+  ],
+  "alarm_evaluation": {
+    "test_devices": 3,
+    "total_test_operating_hours": 10.0,
+    "created_alarm_events": 3,
+    "events_per_100_operating_hours": 30.0,
+    "note": "All trajectories contain progressing wear. This is all alarm events, not false alarm rate; overlapping evidence is correlated."
+  },
+  "end_to_end_workflow": {
+    "repair_retest_closed": true,
+    "source": "synthetic; explicitly designed healthy-retest fixture seed 100"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.6.0+cpu",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "torch_threads": 2
+  }
+}
