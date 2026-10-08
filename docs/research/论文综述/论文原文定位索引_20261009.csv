@@ -1,0 +1,13 @@
+﻿参考文献编号,原上传文件编号,文件名,PDF页数,核读定位,定位内容,SHA256
+1,6,An_Enhanced_Intelligent_Diagnosis_Method_Based_on_Multi-Sensor_Image_Fusion_via_Improved_Deep_Learning_Network.pdf,10,PDF第1、3—4、6、8页,摘要；振动图像化与瓶颈网络；两个应用数据的结果,597c7079a547ac3fc4b153cffd3ede6d26cf7db4b3a52259a7c72a6063a74485
+2,18,多模态残差注意力网络异步电动机故障诊断_古玉锋.pdf,10,PDF第1—4、7—9页,PCA；分支残差与CBAM；实验和迁移测试；卷期页码,3f3a9b22eafcf88a0c40bd5c133b6da4485d9975651856b6fa1483e771cccedb
+3,16,Multitask_Convolutional_Neural_Network_With_Information_Fusion_for_Bearing_Fault_Diagnosis_and_Localization.pdf,11,PDF第1、3—6、9页,虚拟采样频率；信息融合；双任务结构和动态训练速率,bdbeccb83451db322ae41d85ae138de0323e575725fdb601a2253aeead0a8f9c
+4,1,Domain_Adversarial_Graph_Convolutional_Network_for_Fault_Diagnosis_Under_Variable_Working_Conditions.pdf,10,PDF第1、3—5、8页,网络结构；域对抗与MMD；算法1；实验及复杂度讨论,4bbd8d32b6ddc2c1481d0f426dc49e6c11bff0688e0045d9440fd19d8760b388
+5,17,基于Transformer-LSTM网络的轴承寿命预测.pdf,9,PDF第1—8页,按页面图像核读；图3、5—6；第2.4节95%/5%划分；第3节实验及表1—4,b7c78d2e42e739152d015d1963e096812cb5760122ccdc4e65ec002216a903fb
+6,13,基于深度学习的刀具磨损状态监测研究_周文军.pdf,69,PDF第4、24—27、46—52、64—65页,摘要；平台与磨损测量；GA-LSTM；第4.3节跨刀具划分；第6.2节展望,436ad2c5e2a1df897e2a504c23e0de66a784e562ae06a58dd4861d8dfc38046e
+7,9,考虑模型轻量化设计的PEMFC性能退化预测方法_郑隆举.pdf,16,PDF第1—5、11、14页,网络首发信息；预处理与并行结构；参数/训练耗时；结论,720e56947339fba7bef23b392fd4d692bef038b2c6fc0a7b7416f9c166d557ed
+8,3,算力受限场景下基于混合注意力和稀疏激活的轻量化光伏功率预测模型_龙寰.pdf,13,PDF第1—6、12—13页,网络首发信息；MMT；稀疏注意力与MoE；结论,33d8dffdc8cfa62f4208759ec0bcb9fbe48b0d5ac0282b74852722988cdf5bde
+9,8,基于双模态数据融合网络的工业过程控制回路振荡检测_郎恂.pdf,16,PDF第1—6、12—16页,首发与卷期；双表示与SCFN；119个工业回路及标签；参考文献,eb5be6a9a987743673870d468db50cdcd27405db160044cacf29b6271478d353
+10,7,融合增强和特征精细化网络的无人平台旋转目标检测_蓝鑫.pdf,9,PDF第1—6、8页,网络首发信息；F2Net方法；结果与结论,19fcf0926c76723d8eaab6806843dbc0a9aa882038cac2c9078120fc912a95c8
+11,2,多模态数据融合下超声辅助激光熔覆层形性预测_李亚敏.pdf,17,PDF第1、3—5、7—12、14页,出版标注；多源数据；20个参数；PhysEncoder-RF；结论,491d4f8091448e8ed6b04b205d4af2912768e3e7c483b66a20ef019f3533e383
+12,5,模块化电动工具在塑料制品生产应急维修中的应用研究_朱斌.pdf,3,PDF第1—3页,摘要与模块设计；故障对象；SVM与维修；刊名及182—184页页脚,6f1f0188f495760371f5d8b1073bfddb4deb9700db33b4f71e2fffb50a833800
