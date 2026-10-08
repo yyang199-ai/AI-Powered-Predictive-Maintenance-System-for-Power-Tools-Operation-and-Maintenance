@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Domain_Adversarial_Graph_Convolutional_Network_for_Fault_Diagnosis_Under_Variable_Working_Conditions.pdf",
+    "pages": 10,
+    "characters": 76247,
+    "sha256": "4bbd8d32b6ddc2c1481d0f426dc49e6c11bff0688e0045d9440fd19d8760b388"
+  },
+  {
+    "id": 2,
+    "name": "多模态数据融合下超声辅助激光熔覆层形性预测_李亚敏.pdf",
+    "pages": 17,
+    "characters": 46288,
+    "sha256": "491d4f8091448e8ed6b04b205d4af2912768e3e7c483b66a20ef019f3533e383"
+  },
+  {
+    "id": 3,
+    "name": "算力受限场景下基于混合注意力和稀疏激活的轻量化光伏功率预测模型_龙寰.pdf",
+    "pages": 13,
+    "characters": 53422,
+    "sha256": "33d8dffdc8cfa62f4208759ec0bcb9fbe48b0d5ac0282b74852722988cdf5bde"
+  },
+  {
+    "id": 4,
+    "name": "基于多传感器融合与深度学习的水泵故障诊断方法和系统.pdf",
+    "pages": 12,
+    "characters": 11579,
+    "sha256": "bd837851970843da488320f8ccd68573b5b7b7c902076881727df5ec974545b5"
+  },
+  {
+    "id": 5,
+    "name": "模块化电动工具在塑料制品生产应急维修中的应用研究_朱斌.pdf",
+    "pages": 3,
+    "characters": 11278,
+    "sha256": "6f1f0188f495760371f5d8b1073bfddb4deb9700db33b4f71e2fffb50a833800"
+  },
+  {
+    "id": 6,
+    "name": "An_Enhanced_Intelligent_Diagnosis_Method_Based_on_Multi-Sensor_Image_Fusion_via_Improved_Deep_Learning_Network.pdf",
+    "pages": 10,
+    "characters": 72177,
+    "sha256": "597c7079a547ac3fc4b153cffd3ede6d26cf7db4b3a52259a7c72a6063a74485"
+  },
+  {
+    "id": 7,
+    "name": "融合增强和特征精细化网络的无人平台旋转目标检测_蓝鑫.pdf",
+    "pages": 9,
+    "characters": 50399,
+    "sha256": "19fcf0926c76723d8eaab6806843dbc0a9aa882038cac2c9078120fc912a95c8"
+  },
+  {
+    "id": 8,
+    "name": "基于双模态数据融合网络的工业过程控制回路振荡检测_郎恂.pdf",
+    "pages": 16,
+    "characters": 74222,
+    "sha256": "eb5be6a9a987743673870d468db50cdcd27405db160044cacf29b6271478d353"
+  },
+  {
+    "id": 9,
+    "name": "考虑模型轻量化设计的PEMFC性能退化预测方法_郑隆举.pdf",
+    "pages": 16,
+    "characters": 59762,
+    "sha256": "720e56947339fba7bef23b392fd4d692bef038b2c6fc0a7b7416f9c166d557ed"
+  },
+  {
+    "id": 10,
+    "name": "基于多传感器融合的电机故障诊断算法.pdf",
+    "pages": 13,
+    "characters": 18557,
+    "sha256": "b16273323f821ce3a6a47c23eb548ecc146d0acaa59feb4cdb91068428316bdf"
+  },
+  {
+    "id": 11,
+    "name": "地下空间探测多模态仿生机器人及其变形控制系统与方法.pdf",
+    "pages": 15,
+    "characters": 17304,
+    "sha256": "6fcb6568e679b6069a852671222c1fb7184be1837924ff9f334993fc9d526de0"
+  },
+  {
+    "id": 12,
+    "name": "无人值守无人机机场智能能源管理协同控制系统及方法.pdf",
+    "pages": 14,
+    "characters": 15711,
+    "sha256": "4d054df4c22f4a37f8695f20fbf42d961a6987cf9a5cbe252a952147a56f5bc4"
+  },
+  {
+    "id": 13,
+    "name": "基于深度学习的刀具磨损状态监测研究_周文军.pdf",
+    "pages": 69,
+    "characters": 90324,
+    "sha256": "436ad2c5e2a1df897e2a504c23e0de66a784e562ae06a58dd4861d8dfc38046e"
+  },
+  {
+    "id": 14,
+    "name": "基于多传感器融合的电感绕线设备故障检测方法及系统.pdf",
+    "pages": 17,
+    "characters": 24446,
+    "sha256": "b9c0a27ca28aba334bffc3bf41ca6968feddccf6482c52331e56cebf530b2960"
+  },
+  {
+    "id": 15,
+    "name": "一种智能工器具库房管理系统.pdf",
+    "pages": 11,
+    "characters": 15104,
+    "sha256": "fe78a42e1d1204186a375c12d147982426aab3da23297e83adfccd943b4c6309"
+  },
+  {
+    "id": 16,
+    "name": "Multitask_Convolutional_Neural_Network_With_Information_Fusion_for_Bearing_Fault_Diagnosis_and_Localization.pdf",
+    "pages": 11,
+    "characters": 85482,
+    "sha256": "bdbeccb83451db322ae41d85ae138de0323e575725fdb601a2253aeead0a8f9c"
+  },
+  {
+    "id": 17,
+    "name": "基于Transformer-LSTM网络的轴承寿命预测.pdf",
+    "pages": 9,
+    "characters": 136876,
+    "sha256": "b7c78d2e42e739152d015d1963e096812cb5760122ccdc4e65ec002216a903fb"
+  },
+  {
+    "id": 18,
+    "name": "多模态残差注意力网络异步电动机故障诊断_古玉锋.pdf",
+    "pages": 10,
+    "characters": 45074,
+    "sha256": "3f3a9b22eafcf88a0c40bd5c133b6da4485d9975651856b6fa1483e771cccedb"
+  },
+  {
+    "id": 19,
+    "name": "多模态残差注意力网络异步电动机故障诊断.pdf",
+    "pages": 9,
+    "characters": 40777,
+    "sha256": "d0470f363f57c60e6fcfe58847b7bfb208b169d29d55a2c1564fa27d30607d53"
+  }
+]
