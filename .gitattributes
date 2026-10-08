@@ -1,0 +1,4 @@
+# Keep the Windows launcher bytes intact in GitHub ZIP downloads.
+*.bat -text whitespace=cr-at-eol
+# CSV checksums must be reproducible after a Windows clone.
+*.csv text eol=lf

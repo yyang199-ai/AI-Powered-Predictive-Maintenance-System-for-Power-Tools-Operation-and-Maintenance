@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-08T18:07:55.396108+00:00",
+  "source": "synthetic_raw_waveform_lab",
+  "is_simulated": true,
+  "label_origin": "generator_setting",
+  "run_count": 48,
+  "experiment_grid": {
+    "tools": [
+      "drill",
+      "grinder",
+      "impact_wrench"
+    ],
+    "damage_grades": [
+      "normal",
+      "mild",
+      "moderate",
+      "severe"
+    ],
+    "loads": [
+      0.25,
+      0.75
+    ],
+    "seeds": [
+      42,
+      43
+    ],
+    "window_seconds": 2.0
+  },
+  "tool_defaults": {
+    "drill": {
+      "name": "电钻",
+      "rpm": 1800.0,
+      "modeled_shaft_reference": "modeled_rotating_shaft",
+      "resonance_hz": 2500.0,
+      "bearing_excitation_to_shaft_ratio": 4.6,
+      "thermal_time_constant_seconds": 45.0,
+      "healthy_operating_impacts": false
+    },
+    "grinder": {
+      "name": "角磨机",
+      "rpm": 11000.0,
+      "modeled_shaft_reference": "modeled_rotating_shaft",
+      "resonance_hz": 4200.0,
+      "bearing_excitation_to_shaft_ratio": 4.6,
+      "thermal_time_constant_seconds": 60.0,
+      "healthy_operating_impacts": false
+    },
+    "impact_wrench": {
+      "name": "冲击扳手",
+      "rpm": 2200.0,
+      "modeled_shaft_reference": "modeled_rotating_shaft",
+      "resonance_hz": 3000.0,
+      "bearing_excitation_to_shaft_ratio": 4.6,
+      "thermal_time_constant_seconds": 50.0,
+      "healthy_operating_impacts": true
+    }
+  },
+  "counts": {
+    "per_tool": {
+      "drill": 16,
+      "grinder": 16,
+      "impact_wrench": 16
+    },
+    "per_damage": {
+      "normal": 12,
+      "mild": 12,
+      "moderate": 12,
+      "severe": 12
+    },
+    "per_load": {
+      "0.25": 24,
+      "0.75": 24
+    }
+  },
+  "sampling_rates_hz": {
+    "vibration": 25600.0,
+    "current": 25600.0,
+    "temperature": 10.0
+  },
+  "signal_units": {
+    "vibration": "m/s^2",
+    "current": "A",
+    "temperature": "degC"
+  },
+  "time_reference": "per-channel seconds since a shared virtual t=0",
+  "features": {
+    "processing": "offline orthonormal Haar soft shrinkage; Hann FFT/PSD; temperature linear slope",
+    "current_harmonic_reference": "modeled shaft orders 1,2,3, not mains/PWM harmonics",
+    "temperature_slope_unit": "degC/second",
+    "damage_label_used_to_extract_features": false,
+    "compatible_with_original_six_feature_model_without_retraining": false
+  },
+  "waveforms_saved": false,
+  "waveform_directories": {},
+  "summary_csv": "runs.csv",
+  "csv_sha256": "d7194bf262b5a1346cdc0e069e236b5081259e301bd51de7041d4d3ec085cc6d",
+  "implementation_sha256": {
+    "predictive/lab.py": "b58cf4de477b29b95f2a50e739d41575af800733859303b6b4c4303f2c212023",
+    "scripts/run_virtual_lab.py": "31e477bba71c13f5f100a811a1fc868ed94227492d7555688d6a712e7cf6489e"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1"
+  },
+  "sanity_checks": {
+    "unique_run_ids": true,
+    "finite_feature_values": true,
+    "controlled_damage_comparisons": 12,
+    "monotonic_generator_effects_checked": [
+      "vibration_raw_rms",
+      "current_mean",
+      "temperature_slope"
+    ],
+    "interpretation": "Checks of this generator's construction; not independent fault/RUL validation."
+  },
+  "interpretation_limits": [
+    "These are generated condition runs, not independent tools or measured hardware experiments.",
+    "No commercial tool, real bearing geometry, motor driver or sensor model was calibrated.",
+    "The four grades are input settings, not public bearing dataset fault classes or verified wear labels.",
+    "The batch contains no real failure endpoints, RUL ground truth or diagnostic accuracy evidence.",
+    "48 default runs do not meet or verify the task book's 5000 real multi-condition samples target."
+  ],
+  "independent_real_hardware_runs": 0,
+  "taskbook_real_samples_target_verified": false
+}

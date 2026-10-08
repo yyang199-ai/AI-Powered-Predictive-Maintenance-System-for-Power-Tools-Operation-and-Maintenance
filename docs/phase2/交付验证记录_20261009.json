@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-10-09T02:06:05.308087+08:00",
+  "checks": {
+    "full_unittest_suite": {
+      "passed": 41,
+      "failed": 0,
+      "skipped": 0
+    },
+    "final_ui_tests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "pip_check": "passed",
+    "dataset_and_model_checksums": "passed",
+    "browser_real_interactions": [
+      "public_window_classification",
+      "virtual_waveform_generation",
+      "model_report_and_NASA_trend"
+    ],
+    "streamlit_health": "ok",
+    "setup_script": "executed successfully"
+  },
+  "CWRU": {
+    "original_records": 40,
+    "official_verified_files": 40,
+    "windows": 9346,
+    "record_partitions": {
+      "train": 28,
+      "validation": 8,
+      "test": 4
+    },
+    "window_partitions": {
+      "train": 6625,
+      "validation": 1894,
+      "test": 827
+    },
+    "sha256": "e64be1aa734b4dbce1b2ef163622bdf01f40c4f54a6f80657ea3f8c47b5d26d3",
+    "normal_sample_rate_source": {
+      "rate_hz": 48000,
+      "source_type": "secondary_academic_open_source_mapping",
+      "repository": "https://github.com/Aalto-Arotor/openConMo",
+      "commit": "d2924b6683f1ba49661fae63df963d71efa10c15",
+      "url": "https://github.com/Aalto-Arotor/openConMo/blob/d2924b6683f1ba49661fae63df963d71efa10c15/scripts/CWRU_download.py#L318",
+      "interpretation": "openConMo maps normal files to 48 kHz; CWRU normal table and MAT do not supply per-record sampling rates",
+      "official_mat_sample_rate_field_verified": false,
+      "limitation": "This secondary mapping is the preprocessing convention; byte checksums do not verify the sampling-rate metadata."
+    }
+  },
+  "NASA_IMS": {
+    "complete_snapshots": 984,
+    "bearing_feature_rows": 3936,
+    "original_bytes_retained_in_cloud": 524466160,
+    "RUL_predictor_validated": false
+  },
+  "model": {
+    "selected": "linear",
+    "main_test_accuracy": 0.8137847642079806,
+    "scope": "record-held-out seeded-bearing classification only"
+  },
+  "source_sha256": {
+    "app.py": "53cff6eb59945c16b8ce025954d984a09e21b0809eca2b3d3a9d3ef551e47406",
+    "legacy_app.py": "60dcd595d8b1e742c39510de525e38c8a63f1d43d4ec58550ea63bb862c9e856",
+    "predictive/public_data.py": "fdf5a9a0a5f122039db3afe6a3cccdefc391f93e4290dfe5df7c2b573048a81c",
+    "predictive/bearing_model.py": "f902d0aa09e05df84ad3fd1ba3146337985061f7b5c79d8eea9d1248ee45a636",
+    "predictive/lab.py": "b58cf4de477b29b95f2a50e739d41575af800733859303b6b4c4303f2c212023",
+    "predictive/ims_data.py": "86a57336b56d2d1be083f003bf2b389855438faef415f3264894856b19855195",
+    "scripts/train_bearing.py": "dabb2973ccbb8bd61bf67f5d952b35edf1205f7bf9c274c9c39df9c06bd203b2",
+    "scripts/setup_environment.sh": "ed0e1f80f4a622ded004682f4b7fd278d7ccf64a948af5a493ffa1f4ee22db46",
+    "scripts/verify_phase2.py": "7eee588e935f76f9e13562443ca5fa4546a4203c8d4e4dcc6f65abe3fcdaf457"
+  },
+  "unverified": [
+    "Windows runtime on user machine",
+    "physical-tool sensor acquisition",
+    "MCU benchmark",
+    "natural-wear severity prediction",
+    "validated RUL and 3–7 day warning",
+    "formal patent novelty determination"
+  ]
+}
