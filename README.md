@@ -2,7 +2,17 @@
 
 当前版本完成任务书第二阶段的**电脑模拟实验台与公开轴承数据算法预验证**。默认网页使用真实 CWRU 振动，附带已预处理数据和 CPU 模型；另提供三类电动工具虚拟实验台与 NASA IMS 完整退化趋势。
 
+[![在 GitHub Codespaces 打开](https://github.com/codespaces/badge.svg)](https://codespaces.new/yyang199-ai/AI-Powered-Predictive-Maintenance-System-for-Power-Tools-Operation-and-Maintenance?quickstart=1)
+
 **先读 [早上先看这里](docs/phase2/早上先看这里.md)。** 当前是研究 Demo：主协议留出记录测试准确率约 81.38%，正常记录误报明显，未达到任务书 92% 目标。尚无真实工具采集、已验证的真实寿命模型、MCU 部署或正式专利查新结论。
+
+## 在 GitHub 浏览器里运行
+
+点击上面的 **Open in GitHub Codespaces**，登录 GitHub 并创建个人 Codespace。首次等待依赖自动安装；配置会自动启动实验平台，并打开端口 8501 的网页。不需要本地安装 Python 或 VS Code。
+
+若网页没有自动弹出，在浏览器编辑器底部打开 **Ports（端口）**，找到 **8501**，点击 **Open in Browser（在浏览器中打开）**。需要手动启动时，在终端执行 `bash scripts/start_codespaces.sh`。端口默认使用 Codespaces 私有转发，需要你的 GitHub 登录；停止 Codespace 后网页停止，重新启动后服务自动恢复。
+
+Codespaces 是个人云工作区，使用资格和额度以 GitHub 提示为准。这里提供了启动配置，尚未代你创建 Codespace，也没有发布永久公网网站。
 
 ## Windows：直接打开
 

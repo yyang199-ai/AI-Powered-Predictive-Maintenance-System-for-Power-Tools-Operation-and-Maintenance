@@ -1,0 +1,16 @@
+{
+  "name": "电动工具实验平台 · Python 3.12 CPU",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "remoteUser": "vscode",
+  "hostRequirements": {"cpus": 2, "memory": "4gb"},
+  "postCreateCommand": "bash scripts/setup_codespaces.sh",
+  "postStartCommand": "bash scripts/start_codespaces.sh",
+  "waitFor": "postCreateCommand",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": {
+      "label": "电动工具实验平台",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
