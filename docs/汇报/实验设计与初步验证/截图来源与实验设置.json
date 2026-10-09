@@ -1,0 +1,24 @@
+{
+  "captured_at_utc": "2026-10-09T05:51:12.523801+00:00",
+  "repository": "https://github.com/yyang199-ai/AI-Powered-Predictive-Maintenance-System-for-Power-Tools-Operation-and-Maintenance",
+  "source_commit": "a520770",
+  "capture_method": "Run repository app.py in Streamlit, browser screenshots of actual UI; region crops only; no prediction or chart content altered.",
+  "runtime_url": "http://127.0.0.1:8501",
+  "lab_example": {
+    "tool": "drill",
+    "damage": "moderate (generator setting)",
+    "load": 0.75,
+    "rpm": 1800,
+    "duration_seconds": 2,
+    "seed": 42,
+    "ambient_temperature_c": 25
+  },
+  "public_example": {
+    "record_id": "CWRU-X097",
+    "window_number": 1,
+    "true_label": "normal",
+    "purpose": "Show an actual error, not evidence of successful diagnosis."
+  },
+  "aggregate_metrics_source": "artifacts/bearing/manifest.json",
+  "scope": "Virtual lab screenshots are simulations; CWRU is real public bearing vibration, not a connected power tool; RUL and physical platform not validated."
+}
